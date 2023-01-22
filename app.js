@@ -10,6 +10,8 @@ const rateLimiter = require("express-rate-limit");
 const express = require("express");
 const app = express();
 
+app.use(express.static("public"));
+
 // connectDB
 const connectDB = require("./db/connect");
 ////
@@ -57,5 +59,3 @@ const start = async () => {
 start();
 
 // Take notes at 6:36:41
-
-

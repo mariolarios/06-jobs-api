@@ -8,12 +8,12 @@ const JobSchema = new mongoose.Schema(
     title: {
       type: String,
       required: [true, "Please provide title to your post"],
-      maxlength: 50,
+      maxLength: 50,
     },
     status: {
       type: String,
       required: [true, "Please provide a status"],
-      maxlength: 100,
+      maxLength: 100,
     },
     emotion: {
       type: String,
